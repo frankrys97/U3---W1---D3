@@ -26,14 +26,14 @@ import React from "react";
 
 class MySingleBook extends React.Component {
   state = {
-    selected: null,
+    selected: false,
   };
   render() {
     return (
       <Col>
         <Card
           className={`h-100 card ${
-            this.state.selected === this.props.book.asin ? "selected" : ""
+            this.state.selected ? "selected" : ""
           }`}
         >
           <Card.Img
@@ -41,7 +41,7 @@ class MySingleBook extends React.Component {
             src={this.props.book.img}
             alt={this.props.book.title}
             className="cards-image"
-            onClick={() => this.setState({ selected: this.props.book.asin })}
+            onClick={() => this.setState({ selected: !this.state.selected })}
           />
           <Card.Body className="d-flex flex-column justify-content-between align-items-start">
             <Card.Title>{this.props.book.title}</Card.Title>

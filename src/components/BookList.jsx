@@ -34,7 +34,7 @@ class MyBookList extends React.Component {
           placeholder="Search..."
           value={this.state.searchInput}
           onChange={(e) => this.setState({ searchInput: e.target.value })}
-          className="rounded rounded-2 p-1 border border-1 border-dark my-2"
+          className="rounded rounded-2 p-1 border border-1 border-dark my-2 d-block ms-auto"
         />
         <Row xs={1} sm={2} md={3} lg={4} className="g-4">
           {searchedBook.map((book) => (
