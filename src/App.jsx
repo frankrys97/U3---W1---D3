@@ -7,8 +7,9 @@ import Welcome from "./components/Welcome.jsx";
 // import AllBooks2 from "./components/AllBooks2.jsx";
 // import SingleBook from "./components/SingleBook.jsx";
 // import fantasy from "./books/fantasy.json";
-import horror from "./books/horror.json";
+// import horror from "./books/horror.json";
 import BookList from "./components/BookList.jsx";
+import CarouselHome from "./components/MyCarousel.jsx";
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
         <MyNavbar />
       </header>
       <main>
+        {/* <CarouselHome /> */}
         {/* <SingleBook book={fantasy[0]} /> */}
         <Welcome brand="EpiBooks" />
         {/* <AllBooks /> */}
         {/* <AllBooks2 /> */}
-        <BookList books={horror} />
+        <BookList />
       </main>
       <MyFooter name="EpiBooks"> </MyFooter>
     </div>
