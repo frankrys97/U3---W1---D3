@@ -30,13 +30,13 @@ class CarouselHome extends Component {
   render() {
     return (
       <Container fluid style={{ padding: 0 }}>
-        <Row xs={1}>
+        <Row xs={12}>
           <Col>
-            <Carousel>
+            <Carousel style={{maxHeight: "400px"}}>
               {this.state.selectedJson.map((book) => {
                 return (
-                  <Carousel.Item>
-                      <img src={book.img} alt={book.title} />
+                  <Carousel.Item style={{ maxHeight: "400px", width: "100%" }} key={book.asin}>
+                    <img src={book.img} alt={book.title} style={{ maxHeight: "400px", width: "100%" }} />
                     <Carousel.Caption>
                       <h3>{book.title}</h3>
                       <p>{book.category}</p>

@@ -18,7 +18,7 @@ function App() {
         <MyNavbar />
       </header>
       <main>
-        {/* <CarouselHome /> */}
+        <CarouselHome />
         {/* <SingleBook book={fantasy[0]} /> */}
         <Welcome brand="EpiBooks" />
         {/* <AllBooks /> */}
